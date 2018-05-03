@@ -7,7 +7,7 @@
 function getEarthquakes() {
   client = new XMLHttpRequest();
 
-client.open('GET','https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson');
+client.open('GET','http://developer.cege.ucl.ac.uk:30286/getPOI');
   client.onreadystatechange = earthquakeResponse;
   // note don't use earthquakeResponse() with brackets as that doesn't work
   client.send();
